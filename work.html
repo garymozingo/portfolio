@@ -33,15 +33,26 @@
                 <div id="title"><h3>Concerts On College Avenue</h3></div>
         </div>
            
-            <div class="projectContainer" >
-            <div class="projects" id="tea"></div>   
-                <div id="title"><h3>Sweet Tea Brew Off</h3></div>
-                </div>
+            
             
             <div class="projectContainer" >
-            <div class="projects" id="dance"></div>  
+                <div class="projects" id="tea"> 
+                    <div id="title">
+                        <h3>Sweet Tea Brew Off</h3>                       </div>
+                    </div>
+                </div>
+           
+            
+            
+            
+            
+            
+            <div class="projectContainer" >
+            <div class="projects" id="dance">  
                 <div id="title"><h3>Coker College Dance Posters</h3></div>
             </div>
+            </div>
+            
             
             <div class="projectContainer" >
             <div class="projects" id="raven"></div>  
@@ -63,4 +74,47 @@
 
         </div>
         </div>
+    
+    <div id="darken">
+        <div id="modal">
+
+                <button id="close">&times;</button>
+            <div id="modal_content"></div>
+            
+        </div>
+    
+    </div>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
+    
+    <script>
+     $(document).ready(function(){
+        $(".projects").click(function(){
+            var cloney = $(this).clone();
+            $("#modal_content").html(cloney);
+            $("#darken").fadeIn(150);
+            
+        });
+         
+          $("#close").click(function(){
+            $("#darken").fadeOut(150);
+              
+          });
+     
+     
+     });
+        
+        
+    
+    
+    
+    
+    
+    
+    </script>
+    
+    
+    
     </body>
